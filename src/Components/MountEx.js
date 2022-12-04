@@ -1,0 +1,29 @@
+
+import React, { Component } from 'react'
+
+ class MountEx extends Component {
+
+  constructor(props){
+    super(props);
+    this.state={
+        name:"sathya"
+    }
+    console.log("constructor called")
+  }
+
+  static getDerivedStateFromProps() {
+    return console.log("getderived states props is called");
+  }
+  componentDidMount() {  
+    console.log('Component Did MOUNT!')  
+ }
+
+  render() {
+    return (
+      
+      console.log("render calleed")
+      
+    )
+  }
+}
+export default MountEx;
